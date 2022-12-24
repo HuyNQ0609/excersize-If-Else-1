@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 5</title>
+</head>
+<body>
+  <script>
+    let a = prompt("Enter your test scores:");
+    let b = prompt("Enter your midterm exam scores:");
+    let c = prompt("Enter your final exam score");
+    if( a > 10 || b > 10 || c > 10 || a < 0 || b < 0 || c < 0) {
+      alert("Please re-enter the score!");
+    } else if( a < 5 || b < 5 || c < 5) {
+      alert("You are a bad student!");
+    } else if( a < 8 || b < 8 || c < 8) {
+      alert("You are an average student!");
+    } else {
+      alert("You are a good student!");
+    }
+  </script>
+</body>
+</html>

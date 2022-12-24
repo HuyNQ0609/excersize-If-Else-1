@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 7</title>
+</head>
+<body>
+  <script>
+    let minutes = prompt("Enter the number of minutes you have called: ");
+    if( minutes > 0 && minutes <= 50 ) {
+      pay = 25000;
+    } else if( minutes <= 150) {
+      pay = 25000 + (minutes * 600) / 6 / 3;
+    } else if( minutes <= 200) {
+      pay = 25000 + (minutes * 400) / 6 / 3;
+    } else {
+      pay = 25000 + (minutes * 400) / 6 / 3;
+    }
+    document.write("The amount you have to pay is: " + pay + " VND");
+  </script>
+</body>
+</html>

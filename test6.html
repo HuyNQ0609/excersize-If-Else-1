@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 6</title>
+</head>
+<body>
+  <p>The number of products:</p>
+  <input type="number" id="Product" onchange="monthlyInterest()">
+  <p id="Result"></p>
+  <script>
+    function monthlyInterest() {
+      let products = document.getElementById("Product").value;
+        let profit;
+        if (products < 1000) {
+            document.getElementById("Result").innerHTML = "You haven't sold 1000 products this month so you don't get commission.";
+        } else {
+            profit = products * 50000 * 2 / 100;
+            document.getElementById("Result").innerHTML ="The amount of commission you received this month: " + profit + " VND";
+        }
+    }
+  </script>
+</body>
+</html>
